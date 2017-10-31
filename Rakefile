@@ -4,6 +4,8 @@ require 'find'
 require 'date'
 require 'open3'
 
+# Testa git.
+
 task :default => [:wip]
 
 SOURCE_FILES = FileList['livro/livro.asc', 'livro/capitulos/*']
