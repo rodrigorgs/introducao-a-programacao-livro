@@ -54,6 +54,8 @@ namespace "wip" do
     Rake::Task["wip:new"].invoke
   end
 
+
+
   EDITORA_PDF = "#{@BOOK_SOURCE_DIR}/editora/editora.pdf"
   
   desc "build book from #{@RELEASE_DIR}"
