@@ -4,6 +4,8 @@ require 'find'
 require 'date'
 require 'open3'
 
+# Testa git.
+
 task :default => [:wip]
 
 SOURCE_FILES = FileList['livro/livro.asc', 'livro/capitulos/*']
@@ -53,6 +55,8 @@ namespace "wip" do
   file WIP_ADOC => [@BOOK_SOURCE] do
     Rake::Task["wip:new"].invoke
   end
+
+
 
   EDITORA_PDF = "#{@BOOK_SOURCE_DIR}/editora/editora.pdf"
   
@@ -348,3 +352,4 @@ namespace "release" do
 end
 
 #asdasd
+#185302588
